@@ -1,0 +1,242 @@
+[
+  {
+    "id":1,
+    "name": "Granotone Spray Grade Speaker Cabinet Texture Coating BLACK Functional Wall Paint (800 ml)",
+    "images": [
+      "/images/container.png",
+      "/images/container.png",
+      "/images/container.png"
+    ],
+    "description": "Premium quality texture coating for speaker cabinets and walls.",
+    "rating": 4.5,
+    "ratingCount": 150,
+    "quantity": "800 ml",
+    "offerPrice": "800",
+    "originalPrice": "₹1000",
+    "discount": "20% off",
+    "freeDelivery": true,
+    "colors": ["Red", "Blue", "Green"],
+    "textures": ["Matte", "Glossy"],
+    "deliveryDate": "Delivered By: 20th July",
+    "seller": {
+      "name": "PaintStore",
+      "contact": "1234567890",
+      "address": "123 Paint Street, Paint City"
+    },
+    "details": {
+      "warranty": "2 years",
+      "brand": "Hextona",
+      "color": "Red",
+      "finishType": "Matte",
+      "size": "800 ml",
+      "specialFeatures": "Eco-friendly",
+      "about": [
+        "Superior Coverage - Dulux Promise offers exceptional coverage, allowing you to achieve your desired result with fewer coats. This feature saves you both time and effort during the painting process.",
+        "Durable Protection - The paint offers long-lasting protection to exterior surfaces, shielding them from the elements and maintaining their appearance over years.",
+        "Vibrant and Opulent Finish - Dulux Promise provides a vibrant and elegant finish that enhances the aesthetic appeal of your home, helping it stand out in your neighborhood.",
+        "Hassle-Free Application - The paint is designed for easy mixing and smooth application, whether you're a DIY enthusiast or a professional painter, ensuring a seamless and hassle-free experience.",
+        "Weather-Resistance - Regardless of weather conditions, this paint maintains its quality and appearance, offering protection against rain, sun, and wind exposure."
+      ]
+    }
+  },
+  {
+    "id":2,
+    "name": "Luxor Glossy Finish Premium Wall Paint (1L)",
+    "images": [
+      "/images/container.png",
+      "/images/container.png",
+      "/images/container.png"
+    ],
+    "description": "High gloss finish for a stunning look on your walls.",
+    "rating": 4,
+    "ratingCount": 200,
+    "quantity": "1L",
+    "offerPrice": "1200",
+    "originalPrice": "₹1500",
+    "discount": 20,
+    "freeDelivery": true,
+    "colors": ["White", "Black", "Grey"],
+    "textures": ["Glossy"],
+    "deliveryDate": "Delivered By: 22nd July",
+    "seller": {
+      "name": "LuxorPaints",
+      "contact": "0987654321",
+      "address": "456 Luxor Lane, Paint City"
+    },
+    "details": {
+      "warranty": "3 years",
+      "brand": "Luxor",
+      "color": "White",
+      "finishType": "Glossy",
+      "size": "1L",
+      "specialFeatures": "Scratch-resistant",
+      "about": [
+        "High Gloss Finish - Luxor Glossy Finish provides a stunning shine, making your walls stand out with elegance.",
+        "Durable Protection - This paint offers excellent protection against scratches and scuffs, ensuring a long-lasting finish.",
+        "Easy Application - The paint flows smoothly, making it easy to apply with minimal effort.",
+        "Weather-Resistant - Suitable for both interior and exterior surfaces, withstanding various weather conditions.",
+        "Eco-Friendly - Formulated with environmentally friendly materials, making it safe for your home and the environment."
+      ]
+    }
+  },
+  {
+    "id":3,
+    "name": "AquaShield Exterior Wall Paint (5L)",
+    "images": [
+      "/images/container.png",
+      "/images/container.png",
+      "/images/container.png"
+    ],
+    "description": "Superior protection against weather elements for exterior walls.",
+    "rating": 3,
+    "ratingCount": 180,
+    "quantity": "5L",
+    "offerPrice": "2500",
+    "originalPrice": "₹3000",
+    "discount": 70,
+    "freeDelivery": true,
+    "colors": ["Beige", "Cream", "Sand"],
+    "textures": ["Matte"],
+    "deliveryDate": "Delivered By: 24th July",
+    "seller": {
+      "name": "AquaShield",
+      "contact": "1122334455",
+      "address": "789 Aqua Road, Paint Town"
+    },
+    "details": {
+      "warranty": "5 years",
+      "brand": "Hextona",
+      "color": "Red",
+      "finishType": "Matte",
+      "size": "5L",
+      "specialFeatures": "Waterproof",
+      "about": [
+        "Waterproof - Provides superior protection against rain and moisture, keeping your walls dry.",
+        "Long-Lasting - Offers a durable finish that withstands harsh weather conditions.",
+        "Easy to Apply - Flows smoothly for a hassle-free painting experience.",
+        "UV Resistant - Protects against the sun's UV rays, preventing color fading.",
+        "Eco-Friendly - Made with safe and eco-friendly materials."
+      ]
+    }
+  },
+  {
+    "id":4,
+    "name": "EcoFriendly Interior Emulsion Paint (10L)",
+    "images": [
+      "/images/container.png",
+      "/images/container.png",
+      "/images/container.png"
+    ],
+    "description": "Eco-friendly interior paint with a smooth finish.",
+    "rating": 4.7,
+    "ratingCount": 220,
+    "quantity": "10L",
+    "offerPrice": "4000",
+    "originalPrice": "₹5000",
+    "discount": "20% off",
+    "freeDelivery": true,
+    "colors": ["Ivory", "Peach", "Mint"],
+    "textures": ["Matte"],
+    "deliveryDate": "Delivered By: 26th July",
+    "seller": {
+      "name": "EcoPaints",
+      "contact": "6677889900",
+      "address": "101 Eco Street, Paint Ville"
+    },
+    "details": {
+      "warranty": "4 years",
+      "brand": "EcoFriendly",
+      "color": "Ivory",
+      "finishType": "Matte",
+      "size": "10L",
+      "specialFeatures": "Low VOC",
+      "about": [
+        "Low VOC - Eco-friendly formula with low volatile organic compounds for a healthier environment.",
+        "Smooth Finish - Provides a smooth and elegant finish to interior walls.",
+        "Easy Application - Designed for easy and efficient application.",
+        "Durable Protection - Offers long-lasting protection against everyday wear and tear.",
+        "Safe for Home - Non-toxic and safe for use in homes with children and pets."
+      ]
+    }
+  },
+  {
+    "id":5,
+    "name": "QuickDry Fast-Drying Paint (2.5L)",
+    "images": [
+      "/images/container.png",
+      "/images/container.png",
+      "/images/container.png"
+    ],
+    "description": "Fast-drying paint for quick and efficient painting projects.",
+    "rating": 4.4,
+    "ratingCount": 130,
+    "quantity": "2.5L",
+    "offerPrice": "1500",
+    "originalPrice": "₹1800",
+    "discount": "16% off",
+    "freeDelivery": true,
+    "colors": ["Yellow", "Orange", "Pink"],
+    "textures": ["Glossy"],
+    "deliveryDate": "Delivered By: 28th July",
+    "seller": {
+      "name": "QuickDry",
+      "contact": "3344556677",
+      "address": "202 Quick Lane, Paint Metropolis"
+    },
+    "details": {
+      "warranty": "2 years",
+      "brand": "QuickDry",
+      "color": "Yellow",
+      "finishType": "Glossy",
+      "size": "2.5L",
+      "specialFeatures": "Fast-Drying",
+      "about": [
+        "Fast-Drying - Dries quickly, allowing for faster project completion.",
+        "High Gloss Finish - Provides a glossy and shiny finish.",
+        "Durable - Offers long-lasting protection and vibrant colors.",
+        "Easy Application - Smooth and easy to apply with minimal effort.",
+        "Weather-Resistant - Suitable for both indoor and outdoor use."
+      ]
+    }
+  },
+  {
+    "id":6,
+    "name": "UltraCover Premium Exterior Paint (3L)",
+    "images": [
+      "/images/container.png",
+      "/images/container.png",
+      "/images/container.png"
+    ],
+    "description": "High-performance exterior paint for ultimate protection.",
+    "rating": 4.9,
+    "ratingCount": 250,
+    "quantity": "3L",
+    "offerPrice": "3500",
+    "originalPrice": "₹4000",
+    "discount": "12% off",
+    "freeDelivery": true,
+    "colors": ["Brown", "Terracotta", "Olive"],
+    "textures": ["Matte"],
+    "deliveryDate": "Delivered By: 30th July",
+    "seller": {
+      "name": "UltraCover",
+      "contact": "4455667788",
+      "address": "303 Ultra Road, Paint Country"
+    },
+    "details": {
+      "warranty": "6 years",
+      "brand": "UltraCover",
+      "color": "Brown",
+      "finishType": "Matte",
+      "size": "3L",
+      "specialFeatures": "High Durability",
+      "about": [
+        "High Durability - Offers maximum protection and long-lasting durability.",
+        "Superior Coverage - Covers large areas with fewer coats.",
+        "Weather-Proof - Protects against harsh weather conditions.",
+        "Easy to Apply - Smooth application for a flawless finish.",
+        "Eco-Friendly - Safe for the environment and your home."
+      ]
+    }
+  }
+]

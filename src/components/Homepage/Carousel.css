@@ -1,0 +1,50 @@
+/* Carousel.css */
+/* .carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container .slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 100%;
+}
+
+@media (min-width: 768px) {
+  .carousel-container {
+    height: 100%;
+  }
+} */
+/* Carousel.css */
+/* .carousel-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Ensures the container takes the full height */
+/* } */
+/* */ 
+
+/* .carousel-container .slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+  /*object-position: center; /* Centers the image within the container */
+/* } */
+
+/* @media (min-width: 640px) { */
+  /* Small screens (sm) */
+  /* .carousel-container { */
+ /*  height: 20rem; /* 80 units
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium screens (md) */
+  /* .carousel-container { */
+    /* height: 100%; Ensures the container takes the full height */
+  /* } */
+/* } */
+ /* */ 
+

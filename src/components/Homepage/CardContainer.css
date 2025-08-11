@@ -1,0 +1,35 @@
+.custom-range-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 8px;
+    outline: none;
+    background: linear-gradient(to right, #ff7043 var(--value, 0%), #e0e0e0 var(--value, 0%));
+    transition: background 0.3s ease;
+  }
+  
+  .custom-range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width:32px;
+    height:32px;
+    background-color: transparent; /* Ensures the background image is not covered by any color */
+    background: url('./brush.svg') no-repeat center;
+    background-size:contain; /* Adjust to fit the thumb size */
+    background-position: center; /* Move the brush image up */
+    cursor: pointer;
+    border: none; /* Remove any border that might hide the image */
+  }
+  
+  .custom-range-slider::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background: url('./brush.svg') no-repeat center;
+    background-size: contain;
+    background-position: center; /* Move the brush image up */
+    cursor: pointer;
+    border: none;
+  }
+  
