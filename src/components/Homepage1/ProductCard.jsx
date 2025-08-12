@@ -31,7 +31,7 @@ const ProductCard = ({
             <img
                 loading="lazy"
                 src={`${IMAGE_URL}${images[0]}`}
-                alt={name.slice(0, 10)}
+                alt={name?.slice(0, 10)}
                 className=" aspect-[0.71] w-[200px] h-[150px]"
             />
             {/* </div> */}

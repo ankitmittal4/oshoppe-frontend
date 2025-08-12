@@ -486,17 +486,17 @@ const ProductManagement = () => {
                 backgroundColor: isDisabled
                     ? undefined
                     : isSelected
-                    ? data.color
-                    : isFocused
-                    ? color.alpha(1).css()
-                    : undefined,
+                        ? data.color
+                        : isFocused
+                            ? color.alpha(1).css()
+                            : undefined,
                 color: isDisabled
                     ? '#ccc'
                     : isSelected
-                    ? chroma.contrast(color, 'white') > 2
-                        ? 'white'
-                        : 'black'
-                    : data.color,
+                        ? chroma.contrast(color, 'white') > 2
+                            ? 'white'
+                            : 'black'
+                        : data.color,
                 cursor: isDisabled ? 'not-allowed' : 'default',
                 ':active': {
                     ...styles[':active'],
@@ -703,7 +703,7 @@ const ProductManagement = () => {
                 // Check if the color IDs array has changed
                 const hasColoursChanged = !(
                     initialProduct.colour.length ===
-                        currentValues.colour.length &&
+                    currentValues.colour.length &&
                     initialProduct.colour.every(
                         (id, index) => id === currentValues.colour[index],
                     )
@@ -722,7 +722,11 @@ const ProductManagement = () => {
 
     const handleAddprouducts = async (data) => {
         setLoading(true);
-        //console.log('!!data: ', data);
+        // console.log('!!data: ', data);
+        // data.forEach((value, key) => {
+        //     console.log(key, value);
+        // });
+
         try {
             const headers = {
                 Authorization: localStorage.getItem('admin-token'),
@@ -1578,11 +1582,10 @@ const ProductManagement = () => {
                                 {displayColors.map((color) => (
                                     <tr
                                         key={color.value}
-                                        className={`border-b hover:bg-gray-50 ${
-                                            selectedColors.includes(color.value)
-                                                ? 'bg-gray-100'
-                                                : ''
-                                        }`}
+                                        className={`border-b hover:bg-gray-50 ${selectedColors.includes(color.value)
+                                            ? 'bg-gray-100'
+                                            : ''
+                                            }`}
                                     >
                                         <td className="p-2">
                                             <input
@@ -2622,11 +2625,12 @@ const ProductManagement = () => {
                     {product.shortDescription}
                   </td> */}
                                     <td className="px-6 py-4">
+                                        {/* {product.title} */}
                                         {product?.name?.length > 15
                                             ? `${product.name.substring(
-                                                  0,
-                                                  14,
-                                              )}...`
+                                                0,
+                                                14,
+                                            )}...`
                                             : product.name}
                                     </td>
 
@@ -2645,11 +2649,10 @@ const ProductManagement = () => {
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
                                         <span
-                                            className={`text-${
-                                                product.status === 'A'
-                                                    ? 'green'
-                                                    : 'red'
-                                            }-500`}
+                                            className={`text-${product.status === 'A'
+                                                ? 'green'
+                                                : 'red'
+                                                }-500`}
                                         >
                                             {product.status === 'A' ? (
                                                 <p>Active</p>
@@ -2787,11 +2790,10 @@ const ProductManagement = () => {
 
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             <span
-                                                className={`text-${
-                                                    dealer.status === 'A'
-                                                        ? 'green'
-                                                        : 'red'
-                                                }-500`}
+                                                className={`text-${dealer.status === 'A'
+                                                    ? 'green'
+                                                    : 'red'
+                                                    }-500`}
                                             >
                                                 {dealer.status === 'A' ? (
                                                     <p>Active</p>
@@ -2810,7 +2812,7 @@ const ProductManagement = () => {
                                                 className=" px-4 py-2 rounded-lg bg-[#A70024] hover:bg-red-700 text-sm text-white"
                                             >
                                                 {laodingDealerId ===
-                                                dealer._id ? (
+                                                    dealer._id ? (
                                                     <Loader content="Loading..." />
                                                 ) : (
                                                     'Remove'

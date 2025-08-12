@@ -44,9 +44,9 @@ const ProductCard = ({ product }) => {
                             </div>
                         </div>
                         <p className="mt-3 mb-1 text-2xl font-bold text-zinc-900 ">
-                            {product.name.length > 90
-                                ? product.name.slice(0, 90) + `...`
-                                : product.name}
+                            {product?.name?.length > 90
+                                ? product?.name?.slice(0, 90) + `...`
+                                : product?.name}
                         </p>
                         <div className="flex items-center">
                             <IoIosStar className="text-lg text-orange-500" />
