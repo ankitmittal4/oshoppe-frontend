@@ -1648,7 +1648,7 @@ const ProductManagement = () => {
                         <img
                             src={box_iocn}
                             alt=""
-                            srcset=""
+                            srcSet=""
                         />
                         Product List
                     </div>
@@ -1741,7 +1741,7 @@ const ProductManagement = () => {
                             <img
                                 src={box_iocn}
                                 alt=""
-                                srcset=""
+                                srcSet=""
                             />
                             {form.name ? 'Edit Product' : 'Add Product'}
                         </div>
@@ -2714,7 +2714,7 @@ const ProductManagement = () => {
                             <img
                                 src={box_iocn}
                                 alt=""
-                                srcset=""
+                                srcSet=""
                             />
                             Linked Dealers
                         </div>

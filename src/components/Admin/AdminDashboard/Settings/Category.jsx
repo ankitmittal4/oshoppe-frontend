@@ -8,6 +8,7 @@ import edit from '../../../../Assets/edit.svg';
 import { API_URL, IMAGE_URL } from '../../../../Constants';
 
 const Category = () => {
+    // console.log("API_URL: ", API_URL);
     const token = localStorage.getItem('admin-token');
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -110,10 +111,10 @@ const Category = () => {
                 prevCategories.map((category) =>
                     category._id === editCategoryId
                         ? {
-                              ...category,
-                              name: response.data.data.name || categoryName,
-                              image: response.data.data.image || selectedFile,
-                          }
+                            ...category,
+                            name: response.data.data.name || categoryName,
+                            image: response.data.data.image || selectedFile,
+                        }
                         : category,
                 ),
             );
@@ -254,11 +255,10 @@ const Category = () => {
                             <button
                                 onClick={handleEditCategory}
                                 disabled={!categoryName.trim()}
-                                className={`px-5 py-2 rounded-md mr-2 text-white ${
-                                    !categoryName.trim()
-                                        ? 'bg-blue-300 cursor-not-allowed'
-                                        : 'bg-blue-500 hover:bg-blue-700'
-                                }`}
+                                className={`px-5 py-2 rounded-md mr-2 text-white ${!categoryName.trim()
+                                    ? 'bg-blue-300 cursor-not-allowed'
+                                    : 'bg-blue-500 hover:bg-blue-700'
+                                    }`}
                             >
                                 {loading ? 'Editing...' : 'Edit'}
                             </button>
@@ -324,11 +324,10 @@ const Category = () => {
                             <button
                                 onClick={handleSubmit}
                                 disabled={!categoryName.trim()}
-                                className={`px-5 py-2 rounded-md mr-2 text-white ${
-                                    !categoryName.trim()
-                                        ? 'bg-blue-300 cursor-not-allowed'
-                                        : 'bg-blue-500 hover:bg-blue-700'
-                                }`}
+                                className={`px-5 py-2 rounded-md mr-2 text-white ${!categoryName.trim()
+                                    ? 'bg-blue-300 cursor-not-allowed'
+                                    : 'bg-blue-500 hover:bg-blue-700'
+                                    }`}
                             >
                                 {loading ? 'Adding...' : 'Add'}
                             </button>
