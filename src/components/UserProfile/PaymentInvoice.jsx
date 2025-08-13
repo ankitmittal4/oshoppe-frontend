@@ -44,7 +44,7 @@ const PaymentInvoice = () => {
     }, []);
     const transactionDetails = [
         { label: 'Transaction Id', value: detail?.transactionId },
-        { label: 'Payment Type', value: detail?.paymentMode.toUpperCase() },
+        { label: 'Payment Type', value: detail?.paymentMode?.toUpperCase() },
         { label: 'Phone Number', value: detail?.phoneNumber },
         { label: 'Email', value: detail?.email },
         { label: 'Amount Paid', value: '₹' + detail?.amount },
