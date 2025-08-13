@@ -263,7 +263,7 @@ function SellOnOshoppe() {
                     className="object-cover w-full  rounded-lg max-md:max-w-full "
                 />
 
-                <style jsx>{`
+                <style>{`
                     builder-component {
                         max-width: none !important;
                     }
@@ -352,7 +352,7 @@ function SellOnOshoppe() {
                     className="object-contain w-full rounded-lg max-md:max-w-full"
                 />
 
-                <style jsx>{`
+                <style>{`
                     builder-component {
                         max-width: none !important;
                     }
@@ -366,7 +366,7 @@ function SellOnOshoppe() {
                     className="object-contain w-full rounded-lg max-md:max-w-full"
                 />
 
-                <style jsx>{`
+                <style{`
                     builder-component {
                         max-width: none !important;
                     }
@@ -588,7 +588,7 @@ function SellOnOshoppe() {
                 </h2>
                 <div className="flex flex-wrap items-center w-full mt-1 text-base leading-5 tracking-wider text-center gap-9 text-neutral-800 max-md:max-w-full bg-stone-100 rounded-md">
                     {brands.map((brand, index) => (
-                        <div className="flex flex-col  shrink justify-center items-center self-stretch my-auto w-30">
+                        <div className="flex flex-col  shrink justify-center items-center self-stretch my-auto w-30" key={index}>
                             <img
                                 loading="lazy"
                                 src={`${IMAGE_URL}${brand?.image}`}
@@ -609,7 +609,7 @@ function SellOnOshoppe() {
                     className="object-cover w-full rounded-lg max-md:max-w-full "
                 />
 
-                <style jsx>{`
+                <style>{`
                     builder-component {
                         max-width: none !important;
                     }

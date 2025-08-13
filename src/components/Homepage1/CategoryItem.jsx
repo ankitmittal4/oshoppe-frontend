@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { IMAGE_URL, API_URL } from '../../Constants';
 import Navbar from '../Navbar/Navbar';
 
-function CategoryItem({ key, id, name, image }) {
+function CategoryItem({ id, name, image }) {
     //console.log('key', id, name);
     const navigate = useNavigate();
     const [isAuthenticated, setIsAuthenticated] = useState(
