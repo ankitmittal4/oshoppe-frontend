@@ -3,7 +3,8 @@
 
 
 // New API URL local
-const API_URL = 'http://localhost:3000/api';
+// const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://oshoppe-backend.onrender.com/api';
 
 const IMAGE_URL = 'https://paintplus.s3.ap-south-1.amazonaws.com/development/';
 
