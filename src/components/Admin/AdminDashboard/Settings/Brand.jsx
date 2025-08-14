@@ -800,17 +800,17 @@ const Brand = () => {
                 backgroundColor: isDisabled
                     ? undefined
                     : isSelected
-                    ? data.color
-                    : isFocused
-                    ? color.alpha(1).css()
-                    : undefined,
+                        ? data.color
+                        : isFocused
+                            ? color.alpha(1).css()
+                            : undefined,
                 color: isDisabled
                     ? '#ccc'
                     : isSelected
-                    ? chroma.contrast(color, 'white') > 2
-                        ? 'white'
-                        : 'black'
-                    : data.color,
+                        ? chroma.contrast(color, 'white') > 2
+                            ? 'white'
+                            : 'black'
+                        : data.color,
                 cursor: isDisabled ? 'not-allowed' : 'default',
                 ':active': {
                     ...styles[':active'],
@@ -913,23 +913,23 @@ const Brand = () => {
                                             >
                                                 <td
                                                     className="py-2 px-4"
-                                                    // onClick={() =>
-                                                    //     handleSubCategory(
-                                                    //         brand?._id,
-                                                    //         brand?.name,
-                                                    //     )
-                                                    // }
+                                                // onClick={() =>
+                                                //     handleSubCategory(
+                                                //         brand?._id,
+                                                //         brand?.name,
+                                                //     )
+                                                // }
                                                 >
                                                     {brand?.name}
                                                 </td>
                                                 <td
                                                     className="py-2 text-center"
-                                                    // onClick={() =>
-                                                    //     handleSubCategory(
-                                                    //         brand?._id,
-                                                    //         brand?.name,
-                                                    //     )
-                                                    // }
+                                                // onClick={() =>
+                                                //     handleSubCategory(
+                                                //         brand?._id,
+                                                //         brand?.name,
+                                                //     )
+                                                // }
                                                 >
                                                     <div className="flex justify-center lg:justify-center ">
                                                         <img
@@ -965,8 +965,8 @@ const Brand = () => {
                                                             )}
                                                         {brand?.subCategories
                                                             .length > 2 && (
-                                                            <li>...</li>
-                                                        )}
+                                                                <li>...</li>
+                                                            )}
                                                     </ul>
                                                 </td>
                                                 <td className="py-2 px-4 text-center">
@@ -1168,11 +1168,10 @@ const Brand = () => {
                                 {displayColors.map((color) => (
                                     <tr
                                         key={color.value}
-                                        className={`border-b hover:bg-gray-50 ${
-                                            selectedColors.includes(color.value)
-                                                ? 'bg-gray-100'
-                                                : ''
-                                        }`}
+                                        className={`border-b hover:bg-gray-50 ${selectedColors.includes(color.value)
+                                            ? 'bg-gray-100'
+                                            : ''
+                                            }`}
                                     >
                                         <td className="p-2">
                                             <input
@@ -1363,7 +1362,7 @@ const Brand = () => {
                             </div>
                         </div>
                         {/* //IDEA: colors selection */}
-                        <div className="grid grid-cols-2 gap-4 ">
+                        {/* <div className="grid grid-cols-2 gap-4 ">
                             <div>
                                 <label className="block mt-6 text-lg font-medium text-zinc-600">
                                     Select Colours:{' '}
@@ -1389,9 +1388,6 @@ const Brand = () => {
                                 </button>
                             </div>
 
-                            <div>
-                                {/* Color cards and remove functionality */}
-                            </div>
                         </div>
                         <div className="mb-4">
                             {selectedColors.length > 0 && (
@@ -1409,12 +1405,7 @@ const Brand = () => {
                                                         .css(),
                                                 }}
                                             >
-                                                {/* <div
-                          className="w-10 h-6"
-                          style={{
-                            backgroundColor: chroma(color).alpha(1).css(),
-                          }}
-                        ></div> */}
+
                                                 <button
                                                     className="absolute top-0 text-white cursor-pointer right-1"
                                                     onClick={(e) => {
@@ -1437,12 +1428,11 @@ const Brand = () => {
                                     ))}
                                 </div>
                             )}
-                        </div>
+                        </div> */}
 
                         <div className="flex mt-10">
                             {selectedFile && (
                                 <img
-                                    // src={URL.createObjectURL(selectedFile)}
                                     src={
                                         selectedFile.slice(0, 5) === 'brand'
                                             ? `${IMAGE_URL}${selectedFile}`
@@ -1461,7 +1451,6 @@ const Brand = () => {
                                 className="cursor-pointer px-3 py-2 focus:outline-none mt-3 ml-3 text-blue-600"
                             >
                                 Upload Image
-                                {/* {selectedFile.slice(0, 5)} */}
                             </label>
                             <input
                                 id="profile-picture"
@@ -1486,13 +1475,12 @@ const Brand = () => {
                                     !selectedCategory ||
                                     !selectedSubCategories
                                 }
-                                className={`px-5 py-2 rounded-md mr-2 text-white ${
-                                    !brandName.trim() ||
+                                className={`px-5 py-2 rounded-md mr-2 text-white ${!brandName.trim() ||
                                     !selectedCategory ||
                                     !selectedSubCategories
-                                        ? 'bg-blue-300 cursor-not-allowed'
-                                        : 'bg-blue-500 hover:bg-blue-700'
-                                }`}
+                                    ? 'bg-blue-300 cursor-not-allowed'
+                                    : 'bg-blue-500 hover:bg-blue-700'
+                                    }`}
                             >
                                 {loading ? 'Editing...' : 'Edit'}
                             </button>
@@ -1586,7 +1574,7 @@ const Brand = () => {
                                                 >
                                                     {subCategory?.name}
                                                     <button
-                                                        onnClick={() =>
+                                                        onClick={() =>
                                                             setSelectedSubCategories(
                                                                 selectedSubCategories.filter(
                                                                     (id) =>
@@ -1607,7 +1595,7 @@ const Brand = () => {
                             </div>
                         </div>
                         {/* //IDEA: colors selection */}
-                        <div className="grid grid-cols-2 gap-4 ">
+                        {/* <div className="grid grid-cols-2 gap-4 ">
                             <div>
                                 <label className="block mt-6 text-lg font-medium text-zinc-600">
                                     Select Colours:{' '}
@@ -1633,9 +1621,7 @@ const Brand = () => {
                                 </button>
                             </div>
 
-                            <div>
-                                {/* Color cards and remove functionality */}
-                            </div>
+
                         </div>
                         <div className="mb-4">
                             {selectedColors.length > 0 && (
@@ -1653,12 +1639,7 @@ const Brand = () => {
                                                         .css(),
                                                 }}
                                             >
-                                                {/* <div
-                          className="w-10 h-6"
-                          style={{
-                            backgroundColor: chroma(color).alpha(1).css(),
-                          }}
-                        ></div> */}
+
                                                 <button
                                                     className="absolute top-0 text-white cursor-pointer right-1"
                                                     onClick={(e) => {
@@ -1681,7 +1662,7 @@ const Brand = () => {
                                     ))}
                                 </div>
                             )}
-                        </div>
+                        </div> */}
                         <div className="flex mt-8">
                             {selectedFile && (
                                 <img
@@ -1729,13 +1710,12 @@ const Brand = () => {
                                     !selectedCategory ||
                                     !selectedSubCategories
                                 }
-                                className={`px-5 py-2 rounded-md mr-2 text-white ${
-                                    !brandName.trim() ||
+                                className={`px-5 py-2 rounded-md mr-2 text-white ${!brandName.trim() ||
                                     !selectedCategory ||
                                     !selectedSubCategories
-                                        ? 'bg-blue-300 cursor-not-allowed'
-                                        : 'bg-blue-500 hover:bg-blue-700'
-                                }`}
+                                    ? 'bg-blue-300 cursor-not-allowed'
+                                    : 'bg-blue-500 hover:bg-blue-700'
+                                    }`}
                             >
                                 {loading ? 'Adding...' : 'Add'}
                             </button>
