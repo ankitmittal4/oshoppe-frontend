@@ -1,11 +1,12 @@
 import React from "react";
 import "./Loader.css";
+
 function Loader1() {
   return (
-    <div role="status">
+    <div className="loader-container" role="status">
       <svg
         aria-hidden="true"
-        class="inline w-6 h-6 text-gray-200 animate-spin dark:text-gray-600 fill-yellow-300"
+        className="inline w-10 h-10 text-gray-200 animate-spin dark:text-gray-600 fill-yellow-300"
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +20,7 @@ function Loader1() {
           fill="currentFill"
         />
       </svg>
-      <span class="sr-only font-custom">Loading...</span>
+      <span className="sr-only font-custom">Loading...</span>
     </div>
   );
 }
