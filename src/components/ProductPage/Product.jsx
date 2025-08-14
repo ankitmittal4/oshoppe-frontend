@@ -237,7 +237,7 @@ const ProductDetail = () => {
         //console.log('id: ', id);
         if (detail && detail.data && id) {
             const newdata = detail.data;
-            //console.log('#newdata: ', newdata);
+            console.log('#newdata: ', newdata);
             setSearchResult(newdata);
             setDealers(newdata.dealer);
         }
@@ -492,14 +492,14 @@ const ProductDetail = () => {
                             <div className="mb-7">
                                 <div className="mt-5 font-bold text-md">
                                     <span>
-                                        Category:{' '}
+                                        Description:{' '}
                                         <span className="text-gray-600">
-                                            {searchResult?.group}
+                                            {/* {searchResult?.category} */}
                                         </span>
                                     </span>
                                 </div>
                                 <div className="pt-4 ">
-                                    <div className="overflow-x-auto w-80 font-custom">
+                                    <div className="overflow-x-auto w-100 font-custom">
                                         <table className="min-w-full border-none rounded-lg">
                                             <tbody>
                                                 <tr className="">
@@ -508,6 +508,22 @@ const ProductDetail = () => {
                                                     </th>
                                                     <td className="px-4 py-2">
                                                         {searchResult?.brand}
+                                                    </td>
+                                                </tr>
+                                                <tr className="">
+                                                    <th className="px-4 py-2 text-left text-zinc-600">
+                                                        Category:
+                                                    </th>
+                                                    <td className="px-4 py-2">
+                                                        {searchResult?.category}
+                                                    </td>
+                                                </tr>
+                                                <tr className="">
+                                                    <th className="px-4 py-2 text-left text-zinc-600">
+                                                        Sub-Category:
+                                                    </th>
+                                                    <td className="px-4 py-2">
+                                                        {searchResult?.subCategory}
                                                     </td>
                                                 </tr>
                                                 <tr className="">
@@ -530,14 +546,14 @@ const ProductDetail = () => {
                                                         {searchResult?.quantity}
                                                     </td>
                                                 </tr>
-                                                <tr className="">
+                                                {/* <tr className="">
                                                     <th className="px-4 py-2 text-left text-zinc-600">
                                                         Technology
                                                     </th>
                                                     <td className="px-4 py-2">
-                                                        {/* {searchResult?.technology} */}
+                                                        {searchResult?.technology}
                                                     </td>
-                                                </tr>
+                                                </tr> */}
                                                 <tr className="">
                                                     <th className="px-4 py-2 text-left text-zinc-600">
                                                         Material Type:
@@ -545,6 +561,16 @@ const ProductDetail = () => {
                                                     <td className="px-4 py-2">
                                                         {
                                                             searchResult?.finishType
+                                                        }
+                                                    </td>
+                                                </tr>
+                                                <tr className="">
+                                                    <th className="px-4 py-2 text-left text-zinc-600">
+                                                        Manufacture Date:
+                                                    </th>
+                                                    <td className="px-4 py-2">
+                                                        {
+                                                            searchResult?.manufacturingDate.slice(0, 10)
                                                         }
                                                     </td>
                                                 </tr>
@@ -572,11 +598,10 @@ const ProductDetail = () => {
                             </div>
                             <div className="flex space-x-4">
                                 <button
-                                    className={`font-custom flex px-9 py-3 bg-[#A70024] text-white rounded-md text-sm font-semibold ${
-                                        !dealers.length
-                                            ? 'bg-red-500 cursor-not-allowed  text-gray-300 opacity-65'
-                                            : 'hover:bg-red-800'
-                                    }`}
+                                    className={`font-custom flex px-9 py-3 bg-[#A70024] text-white rounded-md text-sm font-semibold ${!dealers.length
+                                        ? 'bg-red-500 cursor-not-allowed  text-gray-300 opacity-65'
+                                        : 'hover:bg-red-800'
+                                        }`}
                                     onClick={() => addtocart()}
                                     disabled={!dealers.length}
                                 >
@@ -588,11 +613,10 @@ const ProductDetail = () => {
                                     ADD CART
                                 </button>
                                 <button
-                                    className={`flex py-3 text-sm font-semibold text-white bg-orange-400 rounded-md font-custom px-9 ${
-                                        !dealers.length
-                                            ? 'bg-gray-300 cursor-not-allowed  text-gray-300 opacity-65'
-                                            : 'hover:bg-orange-500'
-                                    }`}
+                                    className={`flex py-3 text-sm font-semibold text-white bg-orange-400 rounded-md font-custom px-9 ${!dealers.length
+                                        ? 'bg-gray-300 cursor-not-allowed  text-gray-300 opacity-65'
+                                        : 'hover:bg-orange-500'
+                                        }`}
                                     disabled={!dealers.length}
                                     onClick={() => handleBuyNow()}
                                 >
@@ -620,6 +644,38 @@ const ProductDetail = () => {
                                         ),
                                     )}
                                 </ul>
+                                <ul className="px-4 ml-6 list-disc font-custom">
+                                    <li
+                                        className="mb-4"
+                                    >
+                                        {searchResult?.shortDescription}
+                                    </li>
+                                </ul>
+                                <ul className="px-4 ml-6 list-disc font-custom">
+                                    <li
+                                        className="mb-4"
+                                    >
+                                        {searchResult?.longDescription}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="pt-4 ">
+                                <h4 className="px-4 mt-4 mb-4 text-base font-bold text-zinc-700 font-custom">
+                                    Features
+                                </h4>
+                                <ul className="px-4 ml-6 list-disc font-custom">
+                                    {searchResult?.specialFeature.split("\r\n").map(
+                                        (feature, index) => (
+                                            <li
+                                                key={index}
+                                                className="mb-4"
+                                            >
+                                                {feature}
+                                            </li>
+                                        ),
+                                    )}
+                                </ul>
+
                             </div>
                             {/* //FIXME: Builder */}
                             <div className="flex flex-col w-full max-md:max-w-full">
