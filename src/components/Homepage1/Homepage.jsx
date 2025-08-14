@@ -411,7 +411,7 @@ function SellOnOshoppe() {
                     />
                 </aside>
             </main> */}
-            <section className="flex flex-col justify-center pl-2 bg-stone-50 max-md:pl-5 mt-5 rounded-md">
+            <section className="flex flex-col justify-center pl-2 bg-stone-100 max-md:pl-5 mt-5 rounded-md">
                 <header className="lg:flex md:flex flex-wrap items-center max-w-full w-[1366px]">
                     <h2 className="self-stretch flex-1 my-auto md:text-2xl mb-4 sm:text-2xl text-2xl  mt-3 font-semibold shrink basis-0 text-neutral-800 max-md:max-w-full">
                         Oshoppe Recommended Products ⚡
@@ -429,7 +429,7 @@ function SellOnOshoppe() {
                 </div>
             </section>
 
-            <section className="flex flex-col items-start  mt-5  pl-2 bg-stone-50 max-md:pl-5 rounded-md pt-3">
+            <section className="flex flex-col items-start mt-5 pl-2 bg-stone-100 max-md:pl-5 rounded-md pt-3">
                 <h2 className="flex-1 shrink self-stretch max-w-full sm:text-2xl text-xl text-neutral-800 w-[1366px] max-md:px-5 max-md:max-w-full font-semibold">
                     Brands with Oshoppe
                 </h2>
