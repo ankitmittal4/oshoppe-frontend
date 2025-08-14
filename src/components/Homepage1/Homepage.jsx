@@ -4,7 +4,7 @@ import CategoryItem from './CategoryItem';
 import FeatureItem from './FeatureItem';
 import ProductCard from './ProductCard';
 import { useNavigate } from 'react-router-dom';
-import Banner1 from '../../Assets/banner1.png';
+import Banner1 from '../../Assets/Banner1.png';
 import Banner2 from '../../Assets/Banner2.png';
 import Banner3 from '../../Assets/Banner3.png';
 import Banner4 from '../../Assets/Banner4.png';
