@@ -79,6 +79,12 @@ const ProductDetail = () => {
     const params = useParams();
     const id = params.id;
 
+    const today = new Date();
+    const fiveDaysLater = new Date();
+    fiveDaysLater.setDate(today.getDate() + 5);
+    // fiveDaysLater.toDateString();
+    // console.log("Date: ", fiveDaysLater);
+
     const [cartData, setCartData] = useState({
         productId: '',
         dealerId: '',
@@ -343,7 +349,7 @@ const ProductDetail = () => {
                         <div className="w-[60%] pr-6">
                             <div className="flex items-center justify-between mb-3 text-sm text-gray-600">
                                 <span className="text-sm">
-                                    Deliver by Monday July 22
+                                    Deliver by {fiveDaysLater.toDateString()}
                                 </span>
                             </div>
                             <h1 className="mb-2 text-2xl font-semibold font-custom">
@@ -716,8 +722,8 @@ const ProductDetail = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center w-full gap-2 p-4 mt-4 border-t-2 font-custom border-neautral-200">
-                        <p className="text-4xl font-semibold text-black">
+                    <div className="flex flex-col items-center justify-center w-full gap-2 p-4 mt-10 border-t-2 font-custom border-neautral-200">
+                        <p className="text-4xl font-semibold text-black mt-6">
                             Customers who viewed this item also viewed
                         </p>
                         <p className="text-xl text-zinc-600">
