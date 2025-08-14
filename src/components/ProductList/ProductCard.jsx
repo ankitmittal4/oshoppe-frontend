@@ -100,9 +100,9 @@ const ProductCard = ({ product }) => {
                             </div>
                             <div className="flex flex-col">
                                 <span>Brand: {product?.brand}</span>
-                                <span>
+                                {/* <span>
                                     Color: {product?.colour[0]?.hexCode}
-                                </span>
+                                </span> */}
                                 <span>
                                     Storage Capacity: {product?.weight}L
                                 </span>

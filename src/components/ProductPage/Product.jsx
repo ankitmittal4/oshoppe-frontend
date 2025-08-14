@@ -532,7 +532,7 @@ const ProductDetail = () => {
                                                         {searchResult?.subCategory}
                                                     </td>
                                                 </tr>
-                                                <tr className="">
+                                                {/* <tr className="">
                                                     <th className="px-4 py-2 text-left text-zinc-600">
                                                         Colour:
                                                     </th>
@@ -543,7 +543,7 @@ const ProductDetail = () => {
                                                                 ?.hexCode
                                                         }
                                                     </td>
-                                                </tr>
+                                                </tr> */}
                                                 <tr className="">
                                                     <th className="px-4 py-2 text-left text-zinc-600">
                                                         Storage Capacity:
