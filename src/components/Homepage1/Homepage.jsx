@@ -259,7 +259,7 @@ function SellOnOshoppe() {
                     loading="lazy"
                     src={Banner1}
                     alt="Banner"
-                    onClick={handleBanner1Click}
+                    // onClick={handleBanner1Click}
                     className="object-cover w-full  rounded-lg max-md:max-w-full "
                 />
 
@@ -441,7 +441,7 @@ function SellOnOshoppe() {
                                 src={`${IMAGE_URL}${brand?.image}`}
                                 // src={brand?.image}
                                 alt={brand?.name}
-                                className={`object-contain max-w-full aspect-square  w-[90px]`}
+                                className={`object-contain max-w-full aspect-square  w-[90px] `}
                             />
                         </div>
                     ))}
@@ -452,7 +452,7 @@ function SellOnOshoppe() {
                     loading="lazy"
                     src={Banner4}
                     alt="Banner"
-                    onClick={handleBanner1Click}
+                    // onClick={handleBanner1Click}
                     className="object-cover w-full rounded-lg max-md:max-w-full "
                 />
 

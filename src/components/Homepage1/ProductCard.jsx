@@ -32,7 +32,7 @@ const ProductCard = ({
                 loading="lazy"
                 src={`${IMAGE_URL}${images[0]}`}
                 alt={name?.slice(0, 10)}
-                className=" aspect-[0.71] w-[200px] h-[150px]"
+                className=" aspect-[0.71] w-[200px] h-[150px] rounded-t-lg"
             />
             {/* </div> */}
             <div className="flex flex-col mt-4 w-48 max-w-full">
