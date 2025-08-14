@@ -106,7 +106,7 @@ const ProductCard = ({ product }) => {
                                 <span>
                                     Storage Capacity: {product?.weight}L
                                 </span>
-                                <span>Technology: {product?.technology}</span>
+                                {/* <span>Technology: {product?.technology}</span> */}
                                 <span>
                                     Material Type: {product?.finishType}
                                 </span>
