@@ -2107,18 +2107,12 @@ const ProductManagement = () => {
                                 )}
                             </div>
                         </div>
-                        <div className="grid grid-cols-2 gap-4 ">
+                        {/* <div className="grid grid-cols-2 gap-4 ">
                             <div>
                                 <label className="block mt-6 text-lg font-medium text-zinc-600">
                                     Supported Colours{' '}
                                 </label>
-                                {/* <Select
-                  closeMenuOnSelect={false}
-                  isMulti
-                  options={colourOptions}
-                  styles={colourStyles}
-                  onChange={handleColorChange}
-                /> */}
+
                             </div>
                             <div className="mt-5 font-custom">
                                 <button
@@ -2139,10 +2133,6 @@ const ProductManagement = () => {
                                     Clear Selection
                                 </button>
                             </div>
-
-                            <div>
-                                {/* Color cards and remove functionality */}
-                            </div>
                         </div>
                         <div className="mb-4">
                             {selectedColors.length > 0 && (
@@ -2160,12 +2150,7 @@ const ProductManagement = () => {
                                                         .css(),
                                                 }}
                                             >
-                                                {/* <div
-                          className="w-10 h-6"
-                          style={{
-                            backgroundColor: chroma(color).alpha(1).css(),
-                          }}
-                        ></div> */}
+
                                                 <button
                                                     className="absolute top-0 text-white cursor-pointer right-1"
                                                     onClick={(e) => {
@@ -2188,7 +2173,7 @@ const ProductManagement = () => {
                                     ))}
                                 </div>
                             )}
-                        </div>
+                        </div> */}
 
                         {/********image-container********/}
 
