@@ -103,7 +103,7 @@ const Cart = () => {
 
     useEffect(() => {
         //console.log('cartProducts: ', cartProducts);
-        setTimeout(() => {}, 3000);
+        setTimeout(() => { }, 3000);
         if (cartProducts && cartProducts?.data?.products) {
             const newdata = cartProducts?.data?.products;
             //console.log('newdata: ', newdata);
@@ -151,21 +151,19 @@ const Cart = () => {
                                     {steps.map((step, index) => (
                                         <React.Fragment key={index}>
                                             <div
-                                                className={`flex items-center justify-center self-stretch px-5 my-auto rounded-lg h-[47px] rotate-[1.6081230200044232e-16rad] w-[47px] ${
-                                                    index < currentStep
-                                                        ? 'bg-[#A70024]'
-                                                        : 'bg-zinc-400'
-                                                }`}
+                                                className={`flex items-center justify-center self-stretch px-5 my-auto rounded-lg h-[47px] rotate-[1.6081230200044232e-16rad] w-[47px] ${index < currentStep
+                                                    ? 'bg-[#A70024]'
+                                                    : 'bg-zinc-400'
+                                                    }`}
                                             >
                                                 <span>{step}</span>
                                             </div>
                                             {index < steps.length - 1 && (
                                                 <div
-                                                    className={`flex grow shrink self-stretch my-auto h-1 rounded-xl min-w-[240px] w-[314px] ${
-                                                        index < currentStep
-                                                            ? 'bg-[#A70024]'
-                                                            : 'bg-zinc-400'
-                                                    }`}
+                                                    className={`flex grow shrink self-stretch my-auto h-1 rounded-xl min-w-[240px] w-[314px] ${index < currentStep
+                                                        ? 'bg-[#A70024]'
+                                                        : 'bg-zinc-400'
+                                                        }`}
                                                 />
                                             )}
                                         </React.Fragment>
@@ -221,9 +219,9 @@ const Cart = () => {
                                                             {product.name
                                                                 .length > 15
                                                                 ? product.name.slice(
-                                                                      0,
-                                                                      15,
-                                                                  )
+                                                                    0,
+                                                                    15,
+                                                                )
                                                                 : product.name}
                                                         </span>
                                                     </div>
@@ -336,11 +334,10 @@ const Cart = () => {
                                     </span>
                                 </div>
                                 <button
-                                    className={`flex gap-2.5 justify-center items-center px-6 py-2.5 w-full bg-[#A70024] rounded-md mt-3 ${
-                                        cartItems.length === 0
-                                            ? 'cursor-not-allowed opacity-65'
-                                            : ''
-                                    }`}
+                                    className={`flex gap-2.5 justify-center items-center px-6 py-2.5 w-full bg-[#A70024] rounded-md mt-3 ${cartItems.length === 0
+                                        ? 'cursor-not-allowed opacity-65'
+                                        : ''
+                                        }`}
                                     onClick={checkOut}
                                     disabled={cartItems.length === 0}
                                 >

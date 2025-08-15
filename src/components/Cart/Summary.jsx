@@ -77,9 +77,9 @@ const Summary = () => {
             title: 'Login',
             details: loginDetails
                 ? {
-                      name: `${loginDetails.firstName} ${loginDetails.lastName}`,
-                      phone: loginDetails.phoneNumber,
-                  }
+                    name: `${loginDetails.firstName} ${loginDetails.lastName}`,
+                    phone: loginDetails.phoneNumber,
+                }
                 : { name: 'Loading...', phone: 'Loading...' }, // Placeholder while loading
             isActive: true,
         },
@@ -117,7 +117,7 @@ const Summary = () => {
                 headers: headers,
             };
             let response = await axios.request(reqOptions);
-            //console.log('Payment details: ', response.data);
+            // console.log('Payment details: ', response.data);
             setPaymentLink(response.data.data);
             window.open(response.data.data, '_blank');
         } catch (error) {
