@@ -42,11 +42,11 @@ const WishListCard = ({ product, refetchWishlist }) => {
                 </div>
 
                 {/* Right: Product Details */}
-                <div className="flex flex-col justify-between w-full">
+                <div className="flex flex-col justify-between w-full ml-5">
                     {/* Product Info */}
                     <div>
                         <div className="flex justify-between">
-                            <p className="mt-2 mb-1 sm:text-lg text-base font-bold text-zinc-900">
+                            <p className="mt-1 mb-1 sm:text-lg text-base font-bold text-zinc-900">
                                 {product.name.length > 65
                                     ? product.name.slice(0, 65) + `...`
                                     : product.name}
