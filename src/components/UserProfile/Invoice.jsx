@@ -114,7 +114,7 @@ const Invoice = () => {
                         </div>
                         <div className="flex justify-between items-start self-stretch my-auto w-[39%]">
                             <div className="text-md leading-none text-black">
-                                {subOrderDetail?.paymentMode.toUpperCase()}
+                                {subOrderDetail?.paymentMode?.toUpperCase()}
                             </div>
                         </div>
                     </div>

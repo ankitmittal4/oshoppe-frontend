@@ -1323,11 +1323,10 @@ const DealerForm = () => {
 
                                     <td className="px-6 py-4 whitespace-nowrap">
                                         <span
-                                            className={`text-${
-                                                dealer.status === 'A'
+                                            className={`text-${dealer.status === 'A'
                                                     ? 'green'
                                                     : 'red'
-                                            }-500`}
+                                                }-500`}
                                         >
                                             {dealer.status === 'A' ? (
                                                 <p>Active</p>

@@ -270,11 +270,11 @@ const CheckoutStep = ({
                                                                     {product
                                                                         .name
                                                                         .length >
-                                                                    15
+                                                                        15
                                                                         ? product.name.slice(
-                                                                              0,
-                                                                              15,
-                                                                          )
+                                                                            0,
+                                                                            15,
+                                                                        )
                                                                         : product.name}
                                                                 </span>
                                                             </div>
