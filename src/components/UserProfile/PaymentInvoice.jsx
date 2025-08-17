@@ -33,7 +33,7 @@ const PaymentInvoice = () => {
             };
             let response = await axios.request(reqOptions);
             setDetail(response.data.data);
-            console.log("Success", response.data.data);
+            // console.log("Success", response.data.data);
             return response.data.data;
         } catch (error) {
             //console.log(error.response.data || error.message);
@@ -42,7 +42,7 @@ const PaymentInvoice = () => {
     useEffect(() => {
         fetchPaymentDetail();
     }, []);
-    console.log("Mode: ", detail?.paymentMode);
+    // console.log("Mode: ", detail?.paymentMode);
     const transactionDetails = [
         { label: 'Transaction Id', value: detail?.transactionId },
         { label: 'Payment Type', value: detail?.paymentMode?.toUpperCase() },

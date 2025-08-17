@@ -19,12 +19,11 @@ const Summary = () => {
         (state) => state.cartItemlist,
     );
     useEffect(() => {
-        if (cartStatus === 'idle') {
-            dispatch(getcartItemList());
-        }
-    }, [dispatch, cartStatus]);
-    const data = cartProducts?.data?.products || [];
-    console.log("!!!!: ", data);
+        // Always fetch cart items when component mounts or when needed
+        dispatch(getcartItemList());
+    }, [dispatch]);
+    // const data = cartProducts?.data?.products || [];
+    // console.log("!!!!: ", data);
     useEffect(() => {
         //console.log('cartProducts: ', cartProducts);
         if (cartProducts && cartProducts?.data?.products) {
@@ -32,29 +31,24 @@ const Summary = () => {
             console.log('newdata: ', newdata);
             setCartItems(newdata);
         }
-    }, [
-        dispatch,
-        cartStatus,
-        cartProducts?.data?.products?.quantity,
-        cartProducts,
-    ]);
+    }, [cartProducts]);
 
-    // const [totalPrice, setTotalPrice] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0);
 
-    // useEffect(() => {
-    //     const total = cartItems.reduce(
-    //         (sum, item) => sum + item?.sellingPrice * item?.quantity,
-    //         0
-    //     );
-    //     setTotalPrice(total);
-    // }, [cartItems]);
-
-    const calculateTotalPrice = () => {
-        return cartItems.reduce(
-            (total, item) => total + item?.sellingPrice * item?.quantity,
-            0,
+    useEffect(() => {
+        const total = cartItems.reduce(
+            (sum, item) => sum + item?.sellingPrice * item?.quantity,
+            0
         );
-    };
+        setTotalPrice(total);
+    }, [cartItems]);
+
+    // const calculateTotalPrice = () => {
+    //     return cartItems.reduce(
+    //         (total, item) => total + item?.sellingPrice * item?.quantity,
+    //         0,
+    //     );
+    // };
 
     const calculateTotalItems = () => {
         return cartItems.reduce((total, item) => total + item.quantity, 0);
@@ -152,8 +146,8 @@ const Summary = () => {
 
 
     const handlePayment = async () => {
-        // const amount = Number(totalPrice);
-        const amount = 200;
+        const amount = Number(totalPrice);
+        // const amount = 200;
         console.log("Amount: ", amount);
         const authToken = localStorage.getItem('auth-token');
         // setLoading(true);
@@ -305,8 +299,8 @@ const Summary = () => {
                             </span>
                             <span className="text-xl font-semibold text-zinc-600">
                                 <span className="font-sans">₹</span>
-                                {calculateTotalPrice()}
-                                {/* {totalPrice} */}
+                                {/* {calculateTotalPrice()} */}
+                                {totalPrice}
                             </span>
                         </div>
                         <div
@@ -327,8 +321,8 @@ const Summary = () => {
                             </div>
                             <span>
                                 <span className="font-sans">₹</span>
-                                {calculateTotalPrice() + 0}
-                                {/* {totalPrice} */}
+                                {/* {calculateTotalPrice() + 0} */}
+                                {totalPrice}
                             </span>
                         </div>
                         <button

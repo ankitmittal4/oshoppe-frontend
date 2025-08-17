@@ -243,11 +243,10 @@ function OrderDetails() {
                     {categories.map((category) => (
                         <li
                             key={category.id}
-                            className={`relative px-4 flex flex-col justify-center items-center cursor-pointer ${
-                                selectedCategory === category.id
+                            className={`relative px-4 flex flex-col justify-center items-center cursor-pointer ${selectedCategory === category.id
                                     ? 'text-[#A70024]'
                                     : 'text-neutral-500'
-                            }`}
+                                }`}
                             onClick={() => handleCategoryClick(category.id)}
                         >
                             <p className="text-center py-4 font-semibold ">
