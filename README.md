@@ -22,7 +22,7 @@
 
 <p align="center">
   <a href="https://oshoppe-ecom.onrender.com" target="_blank">
-    <img src="https://img.shields.io/badge/CRIC11-Click%20Here-blue?style=for-the-badge&logo=react" alt="Oshoppe"/>
+    <img src="https://img.shields.io/badge/OSHOPPE-Click%20Here-blue?style=for-the-badge&logo=react" alt="Oshoppe"/>
   </a>
 </p>
 
